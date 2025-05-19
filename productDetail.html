@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-800">
+    <div class="container mx-auto p-8">
+        <div class="flex flex-wrap gap-8">
+            <!-- Left Side: Images -->
+            <div class="w-full md:w-5/12">
+                <img id="mainImage" src="https://htmldemo.net/petmark/petmark/image/product/product-details/product-details-4.jpg" alt="Product" class="w-full rounded">
+
+                <div class="flex gap-4 mt-4">
+                    <img src="https://htmldemo.net/petmark/petmark/image/product/product-details/product-details-1.jpg" class="thumb w-20 h-20 border cursor-pointer rounded" onclick="changeImage(this.src)">
+                    <img src="https://htmldemo.net/petmark/petmark/image/product/product-details/product-details-2.jpg" class="thumb w-20 h-20 border cursor-pointer rounded" onclick="changeImage(this.src)">
+                    <img src="https://htmldemo.net/petmark/petmark/image/product/product-details/product-details-3.jpg" class="thumb w-20 h-20 border cursor-pointer rounded" onclick="changeImage(this.src)">
+                    <img src="https://htmldemo.net/petmark/petmark/image/product/product-details/product-details-4.jpg" class="thumb w-20 h-20 border cursor-pointer rounded" onclick="changeImage(this.src)">
+                </div>
+            </div>
+
+            <!-- Right Side: Product Info -->
+            <div class="w-full md:w-6/12">
+                <h2 class="text-2xl font-semibold mb-2">Diam vel neque</h2>
+                <div class="flex items-center mb-2">
+                    <div class="text-yellow-400 mr-2">
+                        ★★★★☆
+                    </div>
+                    <span>(1 customer review)</span>
+                </div>
+                <div class="text-xl mb-4">
+                    <del class="text-gray-400">250$</del>
+                    <span class="text-red-600 font-semibold ml-2">300$</span>
+                </div>
+                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum.</p>
+                <p class="text-green-600 font-medium mb-4">300 IN STOCK</p>
+
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="flex items-center border rounded overflow-hidden">
+                        <button onclick="decreaseQty()" class="px-3 py-1 bg-gray-200">-</button>
+                        <input type="number" id="quantity" value="1" min="1" class="w-12 text-center border-none focus:ring-0">
+                        <button onclick="increaseQty()" class="px-3 py-1 bg-gray-200">+</button>
+                    </div>
+                    <button class="bg-green-600 text-white px-6 py-2 rounded">Add to cart</button>
+                </div>
+
+                <div class="flex items-center gap-4 mb-4">
+                    <a href="#" class="text-gray-500 hover:text-black">♡ Add to Wishlist</a>
+                    <a href="#" class="text-gray-500 hover:text-black">⇄ Add to Compare</a>
+                </div>
+
+                <div class="text-sm mb-4">
+                    <p><strong>Categories:</strong> Bedroom, Decor & Furniture</p>
+                    <p><strong>Tags:</strong> Food</p>
+                </div>
+
+                <div class="flex gap-2 text-gray-500">
+                    <a href="#" class="hover:text-blue-600">👍</a>
+                    <a href="#" class="hover:text-blue-400">🐦</a>
+                    <a href="#" class="hover:text-red-600">📌</a>
+                    <a href="#" class="hover:text-pink-600">💬</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="mt-12">
+            <div class="flex border-b">
+                <button id="descTab" onclick="showTab('description')" class="px-4 py-2 font-medium border-b-2 border-green-600">DESCRIPTION</button>
+                <button id="reviewTab" onclick="showTab('reviews')" class="px-4 py-2 font-medium">REVIEWS (1)</button>
+            </div>
+
+            <div id="description" class="py-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor.</p>
+                <p class="mt-4">Pellentesque aliquet, sem eget laoreet ultrices, ipsum metus feugiat sem, quis fermentum turpis eros eget velit.</p>
+            </div>
+            <div id="reviews" class="py-6 hidden">
+                <p>This is a sample customer review.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeImage(src) {
+            document.getElementById('mainImage').src = src;
+        }
+
+        function increaseQty() {
+            const qty = document.getElementById('quantity');
+            qty.value = parseInt(qty.value) + 1;
+        }
+
+        function decreaseQty() {
+            const qty = document.getElementById('quantity');
+            if (qty.value > 1) qty.value = parseInt(qty.value) - 1;
+        }
+
+        function showTab(tab) {
+            const descTab = document.getElementById('descTab');
+            const reviewTab = document.getElementById('reviewTab');
+            const description = document.getElementById('description');
+            const reviews = document.getElementById('reviews');
+
+            if (tab === 'description') {
+                description.classList.remove('hidden');
+                reviews.classList.add('hidden');
+                descTab.classList.add('border-green-600');
+                reviewTab.classList.remove('border-green-600');
+            } else {
+                reviews.classList.remove('hidden');
+                description.classList.add('hidden');
+                reviewTab.classList.add('border-green-600');
+                descTab.classList.remove('border-green-600');
+            }
+        }
+    </script>
+</body>
+
+</html>
