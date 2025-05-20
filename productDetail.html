@@ -4,119 +4,297 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Page</title>
+    <title>5 Layer Face Mask</title>
+
+    <!-- tailwind css   -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom css  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
 </head>
 
-<body class="bg-white text-gray-800">
-    <div class="container mx-auto p-8">
-        <div class="flex flex-wrap gap-8">
-            <!-- Left Side: Images -->
-            <div class="w-full md:w-5/12">
-                <img id="mainImage" src="https://htmldemo.net/petmark/petmark/image/product/product-details/product-details-4.jpg" alt="Product" class="w-full rounded">
-
-                <div class="flex gap-4 mt-4">
-                    <img src="https://htmldemo.net/petmark/petmark/image/product/product-details/product-details-1.jpg" class="thumb w-20 h-20 border cursor-pointer rounded" onclick="changeImage(this.src)">
-                    <img src="https://htmldemo.net/petmark/petmark/image/product/product-details/product-details-2.jpg" class="thumb w-20 h-20 border cursor-pointer rounded" onclick="changeImage(this.src)">
-                    <img src="https://htmldemo.net/petmark/petmark/image/product/product-details/product-details-3.jpg" class="thumb w-20 h-20 border cursor-pointer rounded" onclick="changeImage(this.src)">
-                    <img src="https://htmldemo.net/petmark/petmark/image/product/product-details/product-details-4.jpg" class="thumb w-20 h-20 border cursor-pointer rounded" onclick="changeImage(this.src)">
-                </div>
-            </div>
-
-            <!-- Right Side: Product Info -->
-            <div class="w-full md:w-6/12">
-                <h2 class="text-2xl font-semibold mb-2">Diam vel neque</h2>
-                <div class="flex items-center mb-2">
-                    <div class="text-yellow-400 mr-2">
-                        ★★★★☆
-                    </div>
-                    <span>(1 customer review)</span>
-                </div>
-                <div class="text-xl mb-4">
-                    <del class="text-gray-400">250$</del>
-                    <span class="text-red-600 font-semibold ml-2">300$</span>
-                </div>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum.</p>
-                <p class="text-green-600 font-medium mb-4">300 IN STOCK</p>
-
-                <div class="flex items-center gap-4 mb-4">
-                    <div class="flex items-center border rounded overflow-hidden">
-                        <button onclick="decreaseQty()" class="px-3 py-1 bg-gray-200">-</button>
-                        <input type="number" id="quantity" value="1" min="1" class="w-12 text-center border-none focus:ring-0">
-                        <button onclick="increaseQty()" class="px-3 py-1 bg-gray-200">+</button>
-                    </div>
-                    <button class="bg-green-600 text-white px-6 py-2 rounded">Add to cart</button>
-                </div>
-
-                <div class="flex items-center gap-4 mb-4">
-                    <a href="#" class="text-gray-500 hover:text-black">♡ Add to Wishlist</a>
-                    <a href="#" class="text-gray-500 hover:text-black">⇄ Add to Compare</a>
-                </div>
-
-                <div class="text-sm mb-4">
-                    <p><strong>Categories:</strong> Bedroom, Decor & Furniture</p>
-                    <p><strong>Tags:</strong> Food</p>
-                </div>
-
-                <div class="flex gap-2 text-gray-500">
-                    <a href="#" class="hover:text-blue-600">👍</a>
-                    <a href="#" class="hover:text-blue-400">🐦</a>
-                    <a href="#" class="hover:text-red-600">📌</a>
-                    <a href="#" class="hover:text-pink-600">💬</a>
-                </div>
-            </div>
+<body class="bg-white text-[#111]">
+    <div class="container mx-auto px-4 py-10">
+        <!-- Breadcrumb -->
+        <div class="text-sm text-gray-500 mb-3">
+            Home &gt; Health &gt; <span class="text-black font-semibold">5 Layer Face Mask 50pcs Black Filtering
+                Protection</span>
         </div>
 
-        <!-- Tabs -->
-        <div class="mt-12">
-            <div class="flex border-b">
-                <button id="descTab" onclick="showTab('description')" class="px-4 py-2 font-medium border-b-2 border-green-600">DESCRIPTION</button>
-                <button id="reviewTab" onclick="showTab('reviews')" class="px-4 py-2 font-medium">REVIEWS (1)</button>
+        <div class="flex flex-col lg:flex-row gap-10">
+            <!-- Left Image & Thumbnails -->
+            <div class="flex flex-col lg:w-1/2 items-center">
+                <!-- Main image -->
+                <!-- <img  src="https://klbtheme.com/bumedi/wp-content/uploads/2024/09/1-59-600x600.jpg"
+                    alt="Mask" class="w-full object-cover border rounded" /> -->
+
+                <a id="main-image-large" data-fancybox="gallery" class="w-full col-span-2 rounded-lg"
+                    href="https://klbtheme.com/bumedi/wp-content/uploads/2024/09/1-59-600x600.jpg">
+                    <img id="main-image" src="https://klbtheme.com/bumedi/wp-content/uploads/2024/09/1-59-600x600.jpg"
+                        alt="Mask" class="w-full object-cover border rounded" />
+                </a>
+
+                <!-- Thumbnails -->
+                <div id="thumbnails" class="flex gap-2 mt-4">
+                    <img src="https://klbtheme.com/bumedi/wp-content/uploads/2024/09/1-59-600x600.jpg"
+                        class="thumbnail w-20 h-20 border-2 border-black cursor-pointer"
+                        data-src="https://klbtheme.com/bumedi/wp-content/uploads/2024/09/1-59-600x600.jpg" />
+
+                    <img src="https://klbtheme.com/bumedi/wp-content/uploads/2024/09/2-57-600x600.jpg"
+                        class="thumbnail w-20 h-20 border cursor-pointer"
+                        data-src="https://klbtheme.com/bumedi/wp-content/uploads/2024/09/2-57-600x600.jpg" />
+
+                    <img src="https://klbtheme.com/bumedi/wp-content/uploads/2024/09/3-54-600x600.jpg"
+                        class="thumbnail w-20 h-20 border cursor-pointer"
+                        data-src="https://klbtheme.com/bumedi/wp-content/uploads/2024/09/3-54-600x600.jpg" />
+                </div>
             </div>
 
-            <div id="description" class="py-6">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor.</p>
-                <p class="mt-4">Pellentesque aliquet, sem eget laoreet ultrices, ipsum metus feugiat sem, quis fermentum turpis eros eget velit.</p>
-            </div>
-            <div id="reviews" class="py-6 hidden">
-                <p>This is a sample customer review.</p>
+
+            <!-- Right Product Info -->
+            <div class="lg:w-1/2 space-y-4">
+                <p class="text-sky-500 text-xs font-semibold uppercase">Allergies</p>
+                <h1 class="text-3xl font-bold leading-tight">5 Layer Face Mask 50pcs Black Filtering Protection</h1>
+                <div class="flex items-center gap-2">
+                    <div class="text-yellow-500 text-xs">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star-half-stroke"></i></span>
+                        <span><i class="fa-regular fa-star"></i></span>
+                    </div>
+                    <span class="text-gray-500 text-sm mr-4">3</span>
+                    <span class="text-sm text-gray-500">SKU: <span
+                            class="text-black font-semibold">GH45I6J7</span></span>
+                </div>
+                <hr>
+                <div>
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-2xl font-bold text-orange-500">$9.99 – $14.10</span>
+                        <span class="text-[#65a30d] font-semibold text-sm">In Stock</span>
+                    </div>
+                    <p class="text-sm text-gray-600">face mask is manufactured by a certificated manufacturer. The
+                        filter
+                        efficiency of this KN95 mask is tested by NPPTL National Personal Protective Technology
+                        Laboratory
+                        then prove it is over 95%, which can protect you in the critical time.</p>
+
+                    <!-- Brands -->
+                    <div id="brand-buttons"
+                        class="space-x-2 text-sm font-semibold mt-6 flex flex-wrap items-center gap-2">
+                        <span class="text-gray-500 font-bold">brands:</span>
+                        <button class="brand-btn px-2 py-1 border border-sky-400 text-sky-500 rounded">HALYARD</button>
+                        <button class="brand-btn px-2 py-1 border border-gray-300 rounded">LPOW</button>
+                        <button class="brand-btn px-2 py-1 border border-gray-300 rounded">Medline</button>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="space-y-4">
+                    <!-- Colors -->
+                    <div id="color-selector" class="text-sm font-semibold flex items-center gap-2 flex-wrap mt-4">
+                        <span class="text-gray-500 font-bold">color:</span>
+                        <span id="selected-color" class="text-black">Brown</span>
+
+                        <div class="color-swatch w-7 h-7 bg-[#6e3e1f] rounded-full border-2 border-black cursor-pointer"
+                            data-color="Brown"></div>
+                        <div class="color-swatch w-6 h-6 bg-[#0f8d4c] rounded-full border cursor-pointer"
+                            data-color="Green"></div>
+                        <div class="color-swatch w-6 h-6 bg-[#f5c13e] rounded-full border cursor-pointer"
+                            data-color="Yellow"></div>
+
+                        <div id="clear-color" class="text-gray-400 text-xs ml-1 cursor-pointer">× Clear</div>
+                    </div>
+
+
+                    <!-- Price -->
+                    <div class="text-lg font-bold">
+                        <span class="line-through text-gray-400 text-base">$22.10</span>
+                        <span class="text-[#65a30d] text-xl font-bold ml-1">$12.10</span>
+                    </div>
+
+                    <!-- Quantity & Cart -->
+                    <div class="flex items-center gap-2">
+                        <div id="quantity-control" class="flex rounded-md border border-black p-2 items-center gap-2">
+                            <button id="decrease-btn" class="">
+                                <i class="fa-solid fa-minus text-black"></i>
+                            </button>
+                            <input id="quantity-input" type="text" value="1" class="w-10 text-center outline-none"
+                                readonly />
+                            <button id="increase-btn" class="">
+                                <i class="fa-solid fa-plus text-black"></i>
+                            </button>
+                        </div>
+
+                        <button class="bg-sky-500 text-white px-5 py-2 rounded font-semibold">Add to cart</button>
+                    </div>
+
+                    <!-- Wishlist & Compare -->
+                    <div class="flex items-center gap-4 mt-2">
+                        <span id="wishlist-toggle" class="cursor-pointer font-medium text-sm">
+                            <i class="fa-regular fa-heart"></i> Add to wishlist
+                        </span>
+
+                        <!-- <span class="cursor-pointer font-medium text-sm">⚖ Compare</span> -->
+                    </div>
+
+                    <!-- Services -->
+                    <div class="mt-4 text-sm text-gray-700 border rounded-md border-gray-300">
+                        <div class="border-b p-3 px-4"><i class="fa-solid fa-truck-fast mr-2"></i> Free Shipping &
+                            Returns on this item</div>
+                        <div class="border-b p-3 px-4"><i class="fa-solid fa-cube mr-2"></i> Delivery within 3–5 working
+                            days</div>
+                        <div class="p-3 px-4"><i class="fa-solid fa-money-check-dollar mr-2"></i> Money Back Guarantee
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Share -->
+                <div class="mt-4 gap-4">
+                    <span class="block text-sm font-semibold">Share this product:</span>
+                    <div class="flex items-center gap-2 mt-2">
+                        <a href="#" class="cursor-pointer"><i
+                                class="fa-brands fa-facebook-f border border-gray-400 p-3 rounded-full text-black w-10 h-10 text-center flex justify-center items-center hover:bg-sky-500 hover:text-white"></i></a>
+                        <a href="#" class="cursor-pointer"><i
+                                class="fa-brands fa-twitter border border-gray-400 p-3 rounded-full text-black w-10 h-10 text-center flex justify-center items-center hover:bg-sky-500 hover:text-white"></i></a>
+                        <a href="#" class="cursor-pointer"><i
+                                class="fa-brands fa-pinterest border border-gray-400 p-3 rounded-full text-black w-10 h-10 text-center flex justify-center items-center hover:bg-sky-500 hover:text-white"></i></a>
+                        <a href="#" class="cursor-pointer"><i
+                                class="fa-brands fa-linkedin-in border border-gray-400 p-3 rounded-full text-black w-10 h-10 text-center flex justify-center items-center hover:bg-sky-500 hover:text-white"></i></a>
+                        <a href="#" class="cursor-pointer"><i
+                                class="fa-brands fa-whatsapp border border-gray-400 p-3 rounded-full text-black w-10 h-10 text-center flex justify-center items-center hover:bg-sky-500 hover:text-white"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
+
+    <!-- Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <!-- fancy box fucntin  -->
     <script>
-        function changeImage(src) {
-            document.getElementById('mainImage').src = src;
-        }
+        // image zoom
+        Fancybox.bind("[data-fancybox='gallery']", {
+            //  Allow close on clicking outside the image
+            click: "close",
 
-        function increaseQty() {
-            const qty = document.getElementById('quantity');
-            qty.value = parseInt(qty.value) + 1;
-        }
+            // Optional: You can also use Escape key to close
+            keyboard: {
+                Escape: "close",
+            },
+        });
+        
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Image thumbnail click event
+            const mainImageLarge = document.getElementById('main-image-large');
+            const mainImage = document.getElementById('main-image');
+            const thumbnails = document.querySelectorAll('#thumbnails .thumbnail');
 
-        function decreaseQty() {
-            const qty = document.getElementById('quantity');
-            if (qty.value > 1) qty.value = parseInt(qty.value) - 1;
-        }
+            thumbnails.forEach(thumb => {
+                thumb.addEventListener('click', () => {
+                    // Set the main image source
+                    const newSrc = thumb.getAttribute('data-src');
+                    mainImage.src = newSrc;
+                    mainImageLarge.href = newSrc;
+                    mainImageLarge.setAttribute('data-fancybox', 'gallery');
+                    mainImageLarge.setAttribute('data-caption', '5 Layer Face Mask 50pcs Black Filtering Protection');
 
-        function showTab(tab) {
-            const descTab = document.getElementById('descTab');
-            const reviewTab = document.getElementById('reviewTab');
-            const description = document.getElementById('description');
-            const reviews = document.getElementById('reviews');
 
-            if (tab === 'description') {
-                description.classList.remove('hidden');
-                reviews.classList.add('hidden');
-                descTab.classList.add('border-green-600');
-                reviewTab.classList.remove('border-green-600');
-            } else {
-                reviews.classList.remove('hidden');
-                description.classList.add('hidden');
-                reviewTab.classList.add('border-green-600');
-                descTab.classList.remove('border-green-600');
-            }
-        }
+                    // Remove border from all
+                    thumbnails.forEach(t => t.classList.remove('border-2', 'border-black'));
+                    thumbnails.forEach(t => t.classList.add('border'));
+
+                    // Add active border to selected
+                    thumb.classList.remove('border');
+                    thumb.classList.add('border-2', 'border-black');
+                });
+            });
+
+            // change the brand border 
+            const brandButtons = document.querySelectorAll('#brand-buttons .brand-btn');
+
+            brandButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active style from all
+                    brandButtons.forEach(b => {
+                        b.classList.remove('border-sky-400', 'text-sky-500');
+                        b.classList.add('border-gray-300');
+                    });
+
+                    // Add active style to clicked one
+                    btn.classList.add('border-sky-400', 'text-sky-500');
+                    btn.classList.remove('border-gray-300');
+                });
+            });
+
+            // change the color of the swatches
+            const colorSwatches = document.querySelectorAll('#color-selector .color-swatch');
+            const selectedColorText = document.getElementById('selected-color');
+            const clearColor = document.getElementById('clear-color');
+
+            // Function to reset all swatches
+            const resetSwatches = () => {
+                colorSwatches.forEach(swatch => {
+                    swatch.classList.remove('w-7', 'h-7', 'border-2', 'border-black');
+                    swatch.classList.add('w-6', 'h-6', 'border');
+                });
+            };
+
+            // On swatch click
+            colorSwatches.forEach(swatch => {
+                swatch.addEventListener('click', () => {
+                    resetSwatches();
+                    swatch.classList.remove('w-6', 'h-6', 'border');
+                    swatch.classList.add('w-7', 'h-7', 'border-2', 'border-black');
+
+                    const colorName = swatch.getAttribute('data-color');
+                    selectedColorText.textContent = colorName;
+                });
+            });
+
+            // Clear button click
+            clearColor.addEventListener('click', () => {
+                resetSwatches();
+                selectedColorText.textContent = '';
+            });
+
+
+            // Quantity control
+            const input = document.getElementById('quantity-input');
+            const plusBtn = document.getElementById('increase-btn');
+            const minusBtn = document.getElementById('decrease-btn');
+
+            plusBtn.addEventListener('click', () => {
+                let current = parseInt(input.value);
+                input.value = current + 1;
+            });
+
+            minusBtn.addEventListener('click', () => {
+                let current = parseInt(input.value);
+                if (current > 1) {
+                    input.value = current - 1;
+                }
+            });
+
+            // Wishlist toggle
+            const wishlistToggle = document.getElementById('wishlist-toggle');
+            const heartIcon = wishlistToggle.querySelector('i');
+
+            wishlistToggle.addEventListener('click', () => {
+                heartIcon.classList.toggle('fa-regular');
+                heartIcon.classList.toggle('fa-solid');
+                heartIcon.classList.toggle('text-sky-500'); // Optional: red heart when active
+            });
+        });
     </script>
 </body>
 
