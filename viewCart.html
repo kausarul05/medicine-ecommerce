@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <!-- tailwind css   -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom css  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="container mx-auto p-6">
+        <!-- Breadcrumb -->
+        <div class="text-sm text-gray-500 mb-4">
+            <a href="#" class="hover:underline">Home</a> / <span class="text-black font-medium">Cart</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <!-- Cart Table -->
+            <div class="lg:col-span-2">
+                <!-- Free Shipping Progress -->
+                <div class="border border-red-300 bg-red-50 p-4 rounded-lg mb-6">
+                    <p class="text-sm font-semibold">
+                        <span class="inline-flex gap-1 items-center">
+                            <i class="fa-solid fa-cube"></i>
+                            Add <span class="font-bold text-red-600"> $259.43 </span> to cart and get free shipping!
+                        </span>
+                    </p>
+                    <div class="h-2 bg-red-200 rounded mt-2 overflow-hidden">
+                        <div class="w-[20%] bg-red-600 h-full"></div>
+                    </div>
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr class="border-b text-gray-500">
+                                <th class="pb-3">Product</th>
+                                <th class="pb-3">Price</th>
+                                <th class="pb-3">Quantity</th>
+                                <th class="pb-3">Subtotal</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y">
+                            <tr>
+                                <td class="py-3 flex items-center gap-3">
+                                    <img src="https://klbtheme.com/bumedi/wp-content/uploads/2024/09/1-54.jpg"
+                                        class="w-14 h-14 rounded" alt="">
+                                    <span class="font-semibold">Equate No Drip Nasal Spray, Pump Mist 12 Hour</span>
+                                </td>
+                                <td>$5.90</td>
+                                <td>
+                                    <div class="flex items-center border rounded w-24">
+                                        <button class="w-8 h-8"><i class="fa-solid fa-minus"></i></button>
+                                        <span class="flex-1 text-center font-semibold">2</span>
+                                        <button class="w-8 h-8"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </td>
+                                <td class="font-semibold">$11.80</td>
+                                <td>
+                                    <button class="text-gray-500 hover:text-red-600"><i class="fa-solid fa-xmark"></i></button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="py-3 flex items-center gap-3">
+                                    <img src="https://klbtheme.com/bumedi/wp-content/uploads/2024/09/1-40.jpg"
+                                        class="w-14 h-14 rounded" alt="">
+                                    <span class="font-semibold">Always Discreet Incontinence Pads Heavy
+                                        Absorbency</span>
+                                </td>
+                                <td>$18.22</td>
+                                <td>
+                                    <div class="flex items-center border rounded w-24">
+                                        <button class="w-8 h-8"><i class="fa-solid fa-minus"></i></button>
+                                        <span class="flex-1 text-center font-semibold">1</span>
+                                        <button class="w-8 h-8"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </td>
+                                <td class="font-semibold">$18.22</td>
+                                <td>
+                                    <button class="text-gray-500 hover:text-red-600"><i class="fa-solid fa-xmark"></i></button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="py-3 flex items-center gap-3">
+                                    <img src="https://klbtheme.com/bumedi/wp-content/uploads/2024/09/1-47.jpg"
+                                        class="w-14 h-14 rounded " alt="">
+                                    <span class="font-semibold">Equate Allergy Relief Cetirizine HCL Softgels</span>
+                                </td>
+                                <td>$10.55</td>
+                                <td>
+                                    <div class="flex items-center border rounded w-24">
+                                        <button class="w-8 h-8"><i class="fa-solid fa-minus"></i></button>
+                                        <span class="flex-1 text-center font-semibold">1</span>
+                                        <button class="w-8 h-8"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </td>
+                                <td class="font-semibold">$10.55</td>
+                                <td>
+                                    <button class="text-gray-500 hover:text-red-600"><i class="fa-solid fa-xmark"></i></button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Coupon + Clear -->
+                <div class="flex flex-wrap justify-between gap-4 mt-6">
+                    <div>
+                        <input type="text" placeholder="Coupon code"
+                            class="border rounded-lg px-4 py-2 outline-none shadow border-gray-400">
+                        <button class="px-4 py-3 bg-black text-white rounded-lg font-medium text-sm">Apply
+                            coupon</button>
+                    </div>
+                    <button
+                        class="px-6 py-2 border rounded-lg text-sm font-medium border-black hover:bg-black hover:text-white">Clear
+                        All</button>
+                </div>
+
+            </div>
+
+            <!-- Cart Summary -->
+            <div>
+                <div class="border rounded-lg p-4 shadow">
+                    <h3 class="font-bold mb-4 text-sm">CART TOTALS</h3>
+
+                    <div class="flex justify-between py-1">
+                        <span class="text-gray-500 text-sm">Subtotal</span>
+                        <span class="text-sm font-medium">$40.57</span>
+                    </div>
+
+                    <div class="py-2 border-t mt-2 flex justify-between items-center">
+                        <p class="font-medium mb-1 text-sm text-gray-500">Shipping</p>
+                        <div class="text-right">
+                            <label class="flex items-center gap-2 text-sm text-right">
+                                Flat rate: $15.00
+                                <input type="radio" name="shipping" checked>
+                            </label>
+                            <label class="flex items-center justify-end gap-2 text-sm mt-1 text-right">
+                                Local pickup
+                                <input type="radio" name="shipping">
+                            </label>
+                            <p class="text-sm mt-2">Shipping to <span class="font-semibold">CA.</span></p>
+                            <!-- <a href="#" class="text-blue-600 text-sm mt-1 inline-block">Change address</a>  -->
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between font-bold border-t pt-2 mt-2">
+                        <span class="text-sm text-gray-500 font-bold">Total</span>
+                        <span class="text-sm">$55.57</span>
+                    </div>
+
+                    <button class="mt-4 w-full bg-sky-500 hover:bg-sky-700 text-white py-2 rounded-lg font-bold text-sm">
+                        Proceed to checkout
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
