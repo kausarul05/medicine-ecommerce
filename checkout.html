@@ -60,7 +60,8 @@
                             class="border p-2 rounded w-full focus:outline-sky-400 shadow-sm" required />
                     </label>
 
-                    <select class="border p-2 rounded w-full text-sm focus:outline-sky-400 active:outline-sky-400 shadow-sm">
+                    <select
+                        class="border p-2 rounded w-full text-sm focus:outline-sky-400 active:outline-sky-400 shadow-sm">
                         <option>Bangladesh</option>
                     </select>
 
@@ -87,7 +88,8 @@
                             class="border p-2 rounded w-full focus:outline-sky-400 shadow-sm" required />
                     </label>
 
-                    <select class="border p-2 rounded w-full text-sm focus:outline-sky-400 active:border-sky-400 shadow-sm">
+                    <select
+                        class="border p-2 rounded w-full text-sm focus:outline-sky-400 active:border-sky-400 shadow-sm">
                         <option>Select District</option>
                         <option>Dhaka</option>
                         <option>Chattogram</option>
@@ -139,12 +141,11 @@
                         <label for="" class="block">
                             <span class="text-sm">Street address *</span>
                             <input type="text" placeholder="Street address *"
-                                class="border p-2 rounded w-full focus:outline-sky-400" />  
+                                class="border p-2 rounded w-full focus:outline-sky-400" />
                         </label>
                         <label for="" class="block">
                             <span class="text-sm">Town / City *</span>
-                            <input type="text" placeholder=""
-                                class="border p-2 rounded w-full focus:outline-sky-400" />
+                            <input type="text" placeholder="" class="border p-2 rounded w-full focus:outline-sky-400" />
                         </label>
 
                         <select class="border p-2 rounded w-full focus:outline-sky-400 active:border-sky-400">
@@ -162,23 +163,37 @@
             </div>
 
             <!-- Order Summary -->
-            <div class="bg-white p-6 rounded shadow space-y-4 h-fit">
-                <h2 class="text-xl font-semibold mb-4">Your order</h2>
+            <div class="md:p-6 p-2 rounded shadow space-y-4 h-fit border border-gray-300"
+                style="background-color: rgba(0, 0, 0, 0.01);">
+                <h2 class="text-lg font-bold mb-4">Your order</h2>
 
                 <div class="space-y-2 text-sm">
-                    <div class="flex justify-between border-b pb-2">
-                        <span>Equate No Drip Nasal Spray</span>
+                    <div class="flex justify-between border-b pb-2 text-gray-500 font-bold text-sm">
+                        <span>Product</span>
+                        <span>Subtotal</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b pb-2">
+                        <div>
+                            <span class="block">Equate No Drip Nasal Spray</span>
+                            <small>Pump Mist 12 Hour × 2</small>
+                        </div>
                         <span>$11.80</span>
                     </div>
-                    <div class="flex justify-between border-b pb-2">
-                        <span>Always Discreet Pads × 1</span>
+                    <div class="flex justify-between items-center border-b pb-2">
+                        <div>
+                            <span class="block">Always Discreet Pads × 1</span>
+                            <small>Pads Heavy Absorbency × 1</small>
+                        </div>
                         <span>$18.22</span>
                     </div>
-                    <div class="flex justify-between border-b pb-2">
-                        <span>Equate Allergy Relief × 2</span>
+                    <div class="flex justify-between items-center border-b pb-2">
+                        <div>
+                            <span class="block">Equate Allergy Relief × 2</span>
+                            <small>Cetirizine HCl Softgels × 2</small>
+                        </div>
                         <span>$21.10</span>
                     </div>
-                    <div class="flex justify-between border-t pt-2">
+                    <div class="flex justify-between  pt-2">
                         <span>Subtotal</span>
                         <span>$51.12</span>
                     </div>
@@ -186,7 +201,7 @@
                         <span>Shipping</span>
                         <span>$15.00</span>
                     </div>
-                    <div class="flex justify-between font-bold border-t pt-2">
+                    <div class="flex justify-between font-bold border-y py-2">
                         <span>Total</span>
                         <span>$66.12</span>
                     </div>
@@ -208,6 +223,10 @@
                     </div>
                 </div>
 
+                <div>
+                    <smal class="text-gray-500 text-xs font-semibold line-clamp-4">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.</smal>
+                </div>
+
                 <!-- Terms -->
                 <div class="flex items-center">
                     <input type="checkbox" id="terms" class="w-4 h-4" />
@@ -215,7 +234,7 @@
                 </div>
 
                 <!-- Place Order -->
-                <button class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded text-sm">Place
+                <button class="w-full bg-sky-600 hover:bg-sky-700 text-white py-2 rounded text-sm">Place
                     order</button>
             </div>
 

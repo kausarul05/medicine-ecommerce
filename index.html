@@ -16,6 +16,8 @@
         href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body class="">
@@ -160,63 +162,1009 @@
             </nav>
         </div>
     </section>
-<!-- ---------------------------------------------- navbar completed------------------------------------------------------------- -->
- <section class="py-12">
-    <div class="container mx-auto px-4 flex flex-col md:flex-row gap-6">
+    <!-- ---------------------------------------------- navbar completed------------------------------------------------------------- -->
+    <section class="py-6">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row md:gap-6 md:-10">
+            <!-- Left: Category List -->
+            <div class="md:w-2/5 lg:w-1/4 border rounded-lg border-sky-400 overflow-hidden">
+                <ul class="font-medium flex flex-col gap-2 h-full justify-between">
+                    <li>
+                        <a href="#allergies"
+                            class="flex items-center gap-2 sm:gap-4 font-normal hover:bg-sky-600 group py-1.5 md:py-3 hover:text-white px-8 duration-200">
+                            <i class="fa-solid fa-capsules text-xl text-sky-600 group-hover:text-white"></i>
+                            <span>Allergies</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#allergies"
+                            class="flex items-center gap-2 sm:gap-4 font-normal hover:bg-sky-600 group py-1.5 md:py-3 hover:text-white px-8 duration-200">
+                            <i class="fa-solid fa-spa text-xl text-sky-600 group-hover:text-white"></i>
+                            <span class="font-roman">Cosmetics</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#allergies"
+                            class="flex items-center gap-2 sm:gap-4 font-normal hover:bg-sky-600 group py-1.5 md:py-3 hover:text-white px-8 duration-200">
+                            <i class="fa-solid fa-temperature-full text-xl text-sky-600 group-hover:text-white"></i>
+                            <span>Cough, Cold, Fever</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#allergies"
+                            class="flex items-center gap-2 sm:gap-4 font-normal hover:bg-sky-600 group py-1.5 md:py-3 hover:text-white px-8 duration-200">
+                            <i class="fa-solid fa-explosion text-xl text-sky-600 group-hover:text-white"></i>
+                            <span>Dietary</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#allergies"
+                            class="flex items-center gap-2 sm:gap-4 font-normal hover:bg-sky-600 group py-1.5 md:py-3 hover:text-white px-8 duration-200">
+                            <i class="fa-solid fa-user-nurse text-xl text-sky-600 group-hover:text-white"></i>
+                            <span>Health</span>
+                        </a>
 
-      <!-- Left: Category List -->
-      <div class="md:w-1/4 border rounded-lg p-4 space-y-4">
-        <ul class="space-y-3 text-blue-600 font-medium">
-          <li><a href="#allergies" class="flex items-center gap-2">🧪 Allergies</a></li>
-          <li><a href="#cosmetics" class="flex items-center gap-2">💄 Cosmetics</a></li>
-          <li><a href="#cough" class="flex items-center gap-2">🤧 Cough, Cold, Fever</a></li>
-          <li><a href="#dietary" class="flex items-center gap-2">🥗 Dietary</a></li>
-          <li><a href="#health" class="flex items-center gap-2">💼 Health</a></li>
-          <li><a href="#medication" class="flex items-center gap-2">💉 Medication</a></li>
-          <li><a href="#medicine" class="flex items-center gap-2">💊 Medicine</a></li>
-          <li><a href="#teeth" class="flex items-center gap-2">🪥 Mouth & Teeth</a></li>
-          <li><a href="#nutrition" class="flex items-center gap-2">📋 Nutrition</a></li>
-          <li><a href="#pollen" class="flex items-center gap-2">🤧 Pollen Sneeze</a></li>
-          <li><a href="#protection" class="flex items-center gap-2">🧴 Protection</a></li>
-        </ul>
-      </div>
-
-      <!-- Right: Swiper Slider -->
-      <div class="md:w-3/4">
-        <div class="swiper mySwiper rounded-lg overflow-hidden">
-          <div class="swiper-wrapper">
-
-            <!-- Slide 1 -->
-            <div class="swiper-slide bg-gray-100 flex flex-col md:flex-row items-center p-6">
-              <div class="md:w-1/2 space-y-4">
-                <p class="text-sm text-gray-500">Exclusive Discounts</p>
-                <h2 class="text-3xl font-bold text-gray-800">Magical Moments<br>Awaits You at Every Corner</h2>
-                <p class="text-gray-600">We Turn Ordinary Days Into Magical Adventures with Our Exciting Collection of Toys and Stylish Kidswear</p>
-                <a href="#" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-5 py-2 rounded-full transition">View Products</a>
-              </div>
-              <div class="md:w-1/2 mt-6 md:mt-0">
-                <img src="https://via.placeholder.com/400x300?text=Doctor+Image" alt="Doctor" class="w-full h-auto rounded-lg">
-              </div>
+                    </li>
+                    <li>
+                        <a href="#allergies"
+                            class="flex items-center gap-2 sm:gap-4 font-normal hover:bg-sky-600 group py-1.5 md:py-3 hover:text-white px-8 duration-200">
+                            <i class="fa-solid fa-syringe text-xl text-sky-600 group-hover:text-white"></i>
+                            <span>Medication</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#allergies"
+                            class="flex items-center gap-2 sm:gap-4 font-normal hover:bg-sky-600 group py-1.5 md:py-3 hover:text-white px-8 duration-200">
+                            <i class="fa-solid fa-pills text-sky-600 text-xl group-hover:text-white"></i>
+                            <span>Medicine</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#allergies"
+                            class="flex items-center gap-2 sm:gap-4 font-normal hover:bg-sky-600 group py-1.5 md:py-3 hover:text-white px-8 duration-200">
+                            <i class="fa-solid fa-teeth-open text-xl text-sky-600 group-hover:text-white"></i>
+                            <span> Mouth & Teeth</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#allergies"
+                            class="flex items-center gap-2 sm:gap-4 font-normal hover:bg-sky-600 group py-1.5 md:py-3 hover:text-white px-8 duration-200">
+                            <i class="fa-solid fa-person-breastfeeding text-xl text-sky-600 group-hover:text-white"></i>
+                            <span>Nutrition</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#allergies"
+                            class="flex items-center gap-2 sm:gap-4 font-normal hover:bg-sky-600 group py-1.5 md:py-3 hover:text-white px-8 duration-200">
+                            <i class="fa-solid fa-box-tissue text-xl text-sky-600 group-hover:text-white"></i>
+                            <span>Pollen Sneeze</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#allergies"
+                            class="flex items-center gap-2 sm:gap-4 font-normal hover:bg-sky-600 group py-1.5 md:py-3 hover:text-white px-8 duration-200">
+                            <i class="fa-solid fa-hands-holding-circle text-xl text-sky-600 group-hover:text-white"></i>
+                            <span>Protection</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
 
-            <!-- Add more slides here -->
-          </div>
+            <!-- Right: Swiper Slider -->
+            <div class="md:w-3/5 lg:w-3/4">
+                <div class="swiper bannerSlider rounded-lg overflow-hidden">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide relative">
+                            <a href="#">
+                                <div
+                                    class="overflow-hidden gap-y-5 absolute p-5 h-full flex flex-col justify-center max-w-[600px] md:pl-7">
+                                    <p class="text-sm text-teal-700">Exclusive Discounts</p>
+                                    <h2 class="text-lg md:text-3xl xl:text-5xl font-bold text-teal-900">
+                                        Magical Moments Awaits You at Every Corner</h2>
+                                    <p class="text-gray-600 hidden sm:block">We Turn Ordinary Days Into Magical
+                                        Adventures with Our
+                                        Exciting
+                                        Collection of Toys and Stylish Kidswear</p>
+                                    <div>
+                                        <button
+                                            class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-5 md:py-2 rounded-full transition py-1">View
+                                            Products</button>
+                                    </div>
+                                </div>
+                                <div class="mt-6 md:mt-0">
+                                    <a href="#">
+                                        <img src="https://klbtheme.com/bumedi/wp-content/uploads/2025/03/banner-01.jpg"
+                                            alt="Doctor" class="w-full h-full sm:h-[400px] lg:h-auto rounded-lg">
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide relative">
+                            <a href="#">
+                                <div
+                                    class="overflow-hidden gap-y-5 absolute p-5 h-full flex flex-col justify-center max-w-[600px] md:pl-7">
+                                    <p class="text-sm text-teal-700">Exclusive Discounts</p>
+                                    <h2 class="text-lg md:text-3xl xl:text-5xl font-bold text-teal-900">
+                                        Magical Moments Awaits You at Every Corner</h2>
+                                    <p class="text-gray-600 hidden sm:block">We Turn Ordinary Days Into Magical
+                                        Adventures with Our
+                                        Exciting
+                                        Collection of Toys and Stylish Kidswear</p>
+                                    <div>
+                                        <button
+                                            class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-5 md:py-2 rounded-full transition py-1">View
+                                            Products</button>
+                                    </div>
+                                </div>
+                                <div class="mt-6 md:mt-0">
+                                    <a href="#">
+                                        <img src="https://klbtheme.com/bumedi/wp-content/uploads/2025/03/banner-01.jpg"
+                                            alt="Doctor" class="w-full h-full sm:h-[400px] lg:h-auto rounded-lg">
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Add more slides here -->
+                    </div>
 
-          <!-- Swiper pagination -->
-          <div class="swiper-pagination mt-4"></div>
+                    <!-- Swiper pagination -->
+                    <div class="swiper-pagination mt-4"></div>
+                </div>
+            </div>
+
         </div>
-      </div>
+    </section>
+    <section class="">
+        <div class="container mx-auto px-4 border-b pb-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
-    </div>
-  </section>
+                <!-- Feature Box 1 -->
+                <div class="flex items-start gap-5">
+                    <img src="./image/computer.svg" alt="Free Delivery" class="size-20" />
+                    <div>
+                        <h3 class="font-semibold text-slate-700 text-base">Free Delivery</h3>
+                        <p class="text-xs text-gray-600">Quisque rhoncus orci neque, nec au nisi condimentum sit amet.
+                        </p>
+                        <a href="#" class="text-xs mt-2 block hover:translate-x-2 duration-300">View
+                            More <span>→</span></a>
+                    </div>
+                </div>
+
+                <!-- Feature Box 2 -->
+                <div class="flex items-start gap-5">
+                    <img src="./image/security.svg" alt="Money Return" class="size-20" />
+                    <div>
+                        <h3 class="font-semibold text-slate-700 text-base">Money Return</h3>
+                        <p class="text-xs text-gray-600">Quisque rhoncus orci neque, nec au nisi condimentum sit amet.
+                        </p>
+                        <a href="#" class="text-xs mt-2 block hover:translate-x-2 duration-300">View
+                            More <span>→</span></a>
+                    </div>
+                </div>
+
+                <!-- Feature Box 3 -->
+                <div class="flex items-start gap-4">
+                    <img src="./image/shopping.svg" alt="Member Discount" class="size-20" />
+                    <div>
+                        <h3 class="font-semibold text-slate-700 text-base">Member Discount</h3>
+                        <p class="text-xs text-gray-600">Quisque rhoncus orci neque, nec au nisi condimentum sit amet.
+                        </p>
+                        <a href="#" class="text-xs mt-2 block hover:translate-x-2 duration-300">View
+                            More <span>→</span></a>
+                    </div>
+                </div>
+
+                <!-- Feature Box 4 -->
+                <div class="flex items-start gap-4">
+                    <img src="./image/phone.svg" alt="Online Support 24/7" class="size-20" />
+                    <div>
+                        <h3 class="font-semibold text-slate-700 text-base">Online Support 24/7</h3>
+                        <p class="text-xs text-gray-600">Quisque rhoncus orci neque, nec au nisi condimentum sit amet.
+                        </p>
+                        <a href="#" class="text-xs mt-2 block hover:translate-x-2 duration-300">View
+                            More <span>→</span></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- popular section -->
+    <section class="py-6">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold">Most popular products</h2>
+                <a href="#" class="text-sm text-blue-600 font-semibold inline-flex items-center hover:underline">View
+                    More <span class="ml-1">→</span></a>
+            </div>
+
+            <div class="swiper popularMySwiper rounded-lg overflow-hidden pb-10">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="border rounded-xl p-4 relative hover:border-orange-500 transition product-card">
+                            <span
+                                class="absolute top-3 left-3 bg-lime-600 text-white text-xs font-semibold px-2 py-1 rounded-full">48%</span>
+                            <button class="absolute top-3 right-3 bg-pink-100 p-2 rounded-full">❤️</button>
+
+                            <a href="#">
+                                <img src="https://klbtheme.com/bumedi/wp-content/uploads/2024/09/1-42-500x500.jpg"
+                                    alt="Product" class="w-full" />
+                            </a>
+
+                            <div class="text-sm text-gray-500 flex items-center gap-1 mt-2">
+                                ⭐⭐⭐⭐ <span>4.00</span>
+                            </div>
+
+                            <a href="#">
+                                <h3 class="font-semibold mt-2 text-sm hover:underline">Digital Oral Thermometer for
+                                    Fever
+                                </h3>
+                            </a>
+
+                            <p class="text-green-600 font-bold mt-1">$7.69
+                                <span class="line-through text-gray-400 text-sm ml-1">$14.75</span>
+                            </p>
+
+                            <!-- Add to cart button -->
+                            <button
+                                class="add-cart-btn w-full mt-4 bg-orange-100 text-orange-600 text-sm font-semibold py-2 rounded-full hover:bg-orange-200">
+                                Add to cart
+                            </button>
+
+                            <!-- Quantity control (hidden by default) -->
+                            <div class="qty-control hidden w-full mt-4 items-center justify-center gap-4">
+                                <div class="flex items-center justify-center gap-4">
+                                    <button
+                                        class="decrease bg-orange-200 text-orange-800 px-3 py-1 rounded-full font-bold">−</button>
+                                    <span class="qty font-medium text-sm">1</span>
+                                    <button
+                                        class="increase bg-orange-200 text-orange-800 px-3 py-1 rounded-full font-bold">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="border rounded-xl p-4 relative hover:border-orange-500 transition product-card">
+                            <span
+                                class="absolute top-3 left-3 bg-lime-600 text-white text-xs font-semibold px-2 py-1 rounded-full">48%</span>
+                            <button class="absolute top-3 right-3 bg-pink-100 p-2 rounded-full">❤️</button>
+
+                            <a href="#">
+                                <img src="https://klbtheme.com/bumedi/wp-content/uploads/2024/09/1-42-500x500.jpg"
+                                    alt="Product" class="w-full" />
+                            </a>
+
+                            <div class="text-sm text-gray-500 flex items-center gap-1 mt-2">
+                                ⭐⭐⭐⭐ <span>4.00</span>
+                            </div>
+
+                            <a href="#">
+                                <h3 class="font-semibold mt-2 text-sm hover:underline">Digital Oral Thermometer for
+                                    Fever
+                                </h3>
+                            </a>
+
+                            <p class="text-green-600 font-bold mt-1">$7.69
+                                <span class="line-through text-gray-400 text-sm ml-1">$14.75</span>
+                            </p>
+
+                            <!-- Add to cart button -->
+                            <button
+                                class="add-cart-btn w-full mt-4 bg-orange-100 text-orange-600 text-sm font-semibold py-2 rounded-full hover:bg-orange-200">
+                                Add to cart
+                            </button>
+
+                            <!-- Quantity control (hidden by default) -->
+                            <div class="qty-control hidden w-full mt-4 items-center justify-center gap-4">
+                                <div class="flex items-center justify-center gap-4">
+                                    <button
+                                        class="decrease bg-orange-200 text-orange-800 px-3 py-1 rounded-full font-bold">−</button>
+                                    <span class="qty font-medium text-sm">1</span>
+                                    <button
+                                        class="increase bg-orange-200 text-orange-800 px-3 py-1 rounded-full font-bold">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="border rounded-xl p-4 relative hover:border-orange-500 transition product-card">
+                            <span
+                                class="absolute top-3 left-3 bg-lime-600 text-white text-xs font-semibold px-2 py-1 rounded-full">48%</span>
+                            <button class="absolute top-3 right-3 bg-pink-100 p-2 rounded-full">❤️</button>
+
+                            <a href="#">
+                                <img src="https://klbtheme.com/bumedi/wp-content/uploads/2024/09/1-42-500x500.jpg"
+                                    alt="Product" class="w-full" />
+                            </a>
+
+                            <div class="text-sm text-gray-500 flex items-center gap-1 mt-2">
+                                ⭐⭐⭐⭐ <span>4.00</span>
+                            </div>
+
+                            <a href="#">
+                                <h3 class="font-semibold mt-2 text-sm hover:underline">Digital Oral Thermometer for
+                                    Fever
+                                </h3>
+                            </a>
+
+                            <p class="text-green-600 font-bold mt-1">$7.69
+                                <span class="line-through text-gray-400 text-sm ml-1">$14.75</span>
+                            </p>
+
+                            <!-- Add to cart button -->
+                            <button
+                                class="add-cart-btn w-full mt-4 bg-orange-100 text-orange-600 text-sm font-semibold py-2 rounded-full hover:bg-orange-200">
+                                Add to cart
+                            </button>
+
+                            <!-- Quantity control (hidden by default) -->
+                            <div class="qty-control hidden w-full mt-4 items-center justify-center gap-4">
+                                <div class="flex items-center justify-center gap-4">
+                                    <button
+                                        class="decrease bg-orange-200 text-orange-800 px-3 py-1 rounded-full font-bold">−</button>
+                                    <span class="qty font-medium text-sm">1</span>
+                                    <button
+                                        class="increase bg-orange-200 text-orange-800 px-3 py-1 rounded-full font-bold">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="border rounded-xl p-4 relative hover:border-orange-500 transition product-card">
+                            <span
+                                class="absolute top-3 left-3 bg-lime-600 text-white text-xs font-semibold px-2 py-1 rounded-full">48%</span>
+                            <button class="absolute top-3 right-3 bg-pink-100 p-2 rounded-full">❤️</button>
+
+                            <a href="#">
+                                <img src="https://klbtheme.com/bumedi/wp-content/uploads/2024/09/1-42-500x500.jpg"
+                                    alt="Product" class="w-full" />
+                            </a>
+
+                            <div class="text-sm text-gray-500 flex items-center gap-1 mt-2">
+                                ⭐⭐⭐⭐ <span>4.00</span>
+                            </div>
+
+                            <a href="#">
+                                <h3 class="font-semibold mt-2 text-sm hover:underline">Digital Oral Thermometer for
+                                    Fever
+                                </h3>
+                            </a>
+
+                            <p class="text-green-600 font-bold mt-1">$7.69
+                                <span class="line-through text-gray-400 text-sm ml-1">$14.75</span>
+                            </p>
+
+                            <!-- Add to cart button -->
+                            <button
+                                class="add-cart-btn w-full mt-4 bg-orange-100 text-orange-600 text-sm font-semibold py-2 rounded-full hover:bg-orange-200">
+                                Add to cart
+                            </button>
+
+                            <!-- Quantity control (hidden by default) -->
+                            <div class="qty-control hidden w-full mt-4 items-center justify-center gap-4">
+                                <div class="flex items-center justify-center gap-4">
+                                    <button
+                                        class="decrease bg-orange-200 text-orange-800 px-3 py-1 rounded-full font-bold">−</button>
+                                    <span class="qty font-medium text-sm">1</span>
+                                    <button
+                                        class="increase bg-orange-200 text-orange-800 px-3 py-1 rounded-full font-bold">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="border rounded-xl p-4 relative hover:border-orange-500 transition product-card">
+                            <span
+                                class="absolute top-3 left-3 bg-lime-600 text-white text-xs font-semibold px-2 py-1 rounded-full">48%</span>
+                            <button class="absolute top-3 right-3 bg-pink-100 p-2 rounded-full">❤️</button>
+
+                            <a href="#">
+                                <img src="https://klbtheme.com/bumedi/wp-content/uploads/2024/09/1-42-500x500.jpg"
+                                    alt="Product" class="w-full" />
+                            </a>
+
+                            <div class="text-sm text-gray-500 flex items-center gap-1 mt-2">
+                                ⭐⭐⭐⭐ <span>4.00</span>
+                            </div>
+
+                            <a href="#">
+                                <h3 class="font-semibold mt-2 text-sm hover:underline">Digital Oral Thermometer for
+                                    Fever
+                                </h3>
+                            </a>
+
+                            <p class="text-green-600 font-bold mt-1">$7.69
+                                <span class="line-through text-gray-400 text-sm ml-1">$14.75</span>
+                            </p>
+
+                            <!-- Add to cart button -->
+                            <button
+                                class="add-cart-btn w-full mt-4 bg-orange-100 text-orange-600 text-sm font-semibold py-2 rounded-full hover:bg-orange-200">
+                                Add to cart
+                            </button>
+
+                            <!-- Quantity control (hidden by default) -->
+                            <div class="qty-control hidden w-full mt-4 items-center justify-center gap-4">
+                                <div class="flex items-center justify-center gap-4">
+                                    <button
+                                        class="decrease bg-orange-200 text-orange-800 px-3 py-1 rounded-full font-bold">−</button>
+                                    <span class="qty font-medium text-sm">1</span>
+                                    <button
+                                        class="increase bg-orange-200 text-orange-800 px-3 py-1 rounded-full font-bold">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="border rounded-xl p-4 relative hover:border-orange-500 transition product-card">
+                            <span
+                                class="absolute top-3 left-3 bg-lime-600 text-white text-xs font-semibold px-2 py-1 rounded-full">48%</span>
+                            <button class="absolute top-3 right-3 bg-pink-100 p-2 rounded-full">❤️</button>
+
+                            <a href="#">
+                                <img src="https://klbtheme.com/bumedi/wp-content/uploads/2024/09/1-42-500x500.jpg"
+                                    alt="Product" class="w-full" />
+                            </a>
+
+                            <div class="text-sm text-gray-500 flex items-center gap-1 mt-2">
+                                ⭐⭐⭐⭐ <span>4.00</span>
+                            </div>
+
+                            <a href="#">
+                                <h3 class="font-semibold mt-2 text-sm hover:underline">Digital Oral Thermometer for
+                                    Fever
+                                </h3>
+                            </a>
+
+                            <p class="text-green-600 font-bold mt-1">$7.69
+                                <span class="line-through text-gray-400 text-sm ml-1">$14.75</span>
+                            </p>
+
+                            <!-- Add to cart button -->
+                            <button
+                                class="add-cart-btn w-full mt-4 bg-orange-100 text-orange-600 text-sm font-semibold py-2 rounded-full hover:bg-orange-200">
+                                Add to cart
+                            </button>
+
+                            <!-- Quantity control (hidden by default) -->
+                            <div class="qty-control hidden w-full mt-4 items-center justify-center gap-4">
+                                <div class="flex items-center justify-center gap-4">
+                                    <button
+                                        class="decrease bg-orange-200 text-orange-800 px-3 py-1 rounded-full font-bold">−</button>
+                                    <span class="qty font-medium text-sm">1</span>
+                                    <button
+                                        class="increase bg-orange-200 text-orange-800 px-3 py-1 rounded-full font-bold">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more slides here -->
+                </div>
+
+                <!-- Swiper pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <section class="py-6">
+        <div class="container mx-auto px-4 grid md:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="relative">
+                <img class="w-full rounded-lg"
+                    src="https://klbtheme.com/bumedi/wp-content/uploads/2025/03/banner-02.jpg" alt="">
+                <div class="rounded-xl max-w-96 h-full justify-center p-6 absolute top-0 left-0 flex flex-col">
+                    <div>
+                        <p class="text-sm text-gray-700 font-semibold mb-2">Exclusive Discount</p>
+                        <h3 class="md:text-2xl font-bold text-[#5a1e48] leading-snug mb-2">
+                            Playful Treasures<br />for Happy Kids
+                        </h3>
+                        <p class="text-gray-700 text-sm mb-4">
+                            Where Every Toy Sparks Creativity and Every Outfit Brings Smiles
+                        </p>
+                        <a href="#" class="text-sm font-medium text-[#5a1e48] mt-auto flex items-center gap-1">
+                            View More →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="relative">
+                <img class="w-full rounded-lg"
+                    src="https://klbtheme.com/bumedi/wp-content/uploads/2025/03/banner-02.jpg" alt="">
+                <div class="rounded-xl max-w-96 h-full justify-center p-6 absolute top-0 left-0 flex flex-col">
+                    <div>
+                        <p class="text-sm text-gray-700 font-semibold mb-2">Exclusive Discount</p>
+                        <h3 class="md:text-2xl font-bold text-[#5a1e48] leading-snug mb-2">
+                            Playful Treasures<br />for Happy Kids
+                        </h3>
+                        <p class="text-gray-700 text-sm mb-4">
+                            Where Every Toy Sparks Creativity and Every Outfit Brings Smiles
+                        </p>
+                        <a href="#" class="text-sm font-medium text-[#5a1e48] mt-auto flex items-center gap-1">
+                            View More →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="relative">
+                <img class="w-full rounded-lg"
+                    src="https://klbtheme.com/bumedi/wp-content/uploads/2025/03/banner-02.jpg" alt="">
+                <div class="rounded-xl max-w-96 h-full justify-center p-6 absolute top-0 left-0 flex flex-col">
+                    <div>
+                        <p class="text-sm text-gray-700 font-semibold mb-2">Exclusive Discount</p>
+                        <h3 class="md:text-2xl font-bold text-[#5a1e48] leading-snug mb-2">
+                            Playful Treasures<br />for Happy Kids
+                        </h3>
+                        <p class="text-gray-700 text-sm mb-4">
+                            Where Every Toy Sparks Creativity and Every Outfit Brings Smiles
+                        </p>
+                        <a href="#" class="text-sm font-medium text-[#5a1e48] mt-auto flex items-center gap-1">
+                            View More →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- small advertisement section -->
+    <section class="py-6 px-2">
+        <div class="container mx-auto">
+            <div
+                class="bg-gray-100 rounded-lg py-6 flex items-center justify-center gap-3 text-sm text-teal-900 flex-wrap">
+                <h2 class="font-bold text-lg md:text-xl">RETURN CASH BACK</h2>
+                <b>Earn 5% cash back on Bumedi.com</b>
+                <p>See if you&apos;re pre-approved with no credit risk.</p>
+                <a href="#"
+                    class="px-5 md:px-7 py-2 rounded-lg border font-semibold text-teal-700 border-teal-500 hover:bg-teal-100">Discover
+                    more</a>
+            </div>
+        </div>
+    </section>
+    <!-- featured large section -->
+    <section>
+        <div class="container mx-auto border-b pb-6">
+            <div class="p-4 grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- first -->
+                <div class="flex flex-col gap-6">
+                    <!-- Product Card -->
+                    <div class="border rounded-xl gap-2 p-4 shadow-sm flex hover:border-orange-500">
+                        <a href="#">
+                            <img src="https://klbtheme.com/bumedi/wp-content/uploads/2024/09/1-78.jpg"
+                                alt="Product Image" class="mx-auto h-40 mb-2">
+                        </a>
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <div class="text-sm text-yellow-500">⭐⭐⭐⭐ 3.67</div>
+                                <a href="#">
+                                    <h2 class="text-sm font-semibold mt-2">The Ginger People Ginger Rescue Soft Lozenges
+                                    </h2>
+                                </a>
+                                <div class="text-green-600 text-lg font-bold">
+                                    <span>$6.88</span>
+                                    <span class="line-through text-gray-400 text-sm">$7.88</span>
+                                </div>
+                            </div>
+                            <div class="add-to-cart-wrapper bg-orange-100 rounded-full inline-block">
+                                <!-- Add to Cart Button -->
+                                <button
+                                    class="add-to-cart-btn hidden text-orange-500 text-sm font-medium w-full py-2 px-4">
+                                    Add to cart
+                                </button>
+                                <!-- Quantity Counter (initially hidden) -->
+                                <div
+                                    class="quantity-controls grid items-center justify-center font-semibold py-1 px-4 grid-cols-3 gap-2">
+                                    <button class="decrease-btn text-xl">-</button>
+                                    <span class="quantity-value text-center border-x border-orange-400 px-2">1</span>
+                                    <button class="increase-btn text-xl">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card -->
+                    <div class="border rounded-xl gap-2 p-4 shadow-sm flex hover:border-orange-500">
+                        <a href="#">
+                            <img src="https://klbtheme.com/bumedi/wp-content/uploads/2024/09/1-78.jpg"
+                                alt="Product Image" class="mx-auto h-40 mb-2">
+                        </a>
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <div class="text-sm text-yellow-500">⭐⭐⭐⭐ 3.67</div>
+                                <a href="#">
+                                    <h2 class="text-sm font-semibold mt-2">The Ginger People Ginger Rescue Soft Lozenges
+                                    </h2>
+                                </a>
+                                <div class="text-green-600 text-lg font-bold">
+                                    <span>$6.88</span>
+                                    <span class="line-through text-gray-400 text-sm">$7.88</span>
+                                </div>
+                            </div>
+                            <div class="add-to-cart-wrapper bg-orange-100 rounded-full inline-block">
+                                <!-- Add to Cart Button -->
+                                <button class="add-to-cart-btn text-orange-500 text-sm font-medium w-full py-2 px-4">
+                                    Add to cart
+                                </button>
+                                <!-- Quantity Counter (initially hidden) -->
+                                <div
+                                    class="quantity-controls hidden items-center justify-center font-semibold py-1 px-4 grid-cols-3 gap-2">
+                                    <button class="decrease-btn text-xl">-</button>
+                                    <span class="quantity-value text-center border-x border-orange-400 px-2">1</span>
+                                    <button class="increase-btn text-xl">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card -->
+                    <div class="border rounded-xl gap-2 p-4 shadow-sm flex hover:border-orange-500">
+                        <a href="#">
+                            <img src="https://klbtheme.com/bumedi/wp-content/uploads/2024/09/1-78.jpg"
+                                alt="Product Image" class="mx-auto h-40 mb-2">
+                        </a>
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <div class="text-sm text-yellow-500">⭐⭐⭐⭐ 3.67</div>
+                                <a href="#">
+                                    <h2 class="text-sm font-semibold mt-2">The Ginger People Ginger Rescue Soft Lozenges
+                                    </h2>
+                                </a>
+                                <div class="text-green-600 text-lg font-bold">
+                                    <span>$6.88</span>
+                                    <span class="line-through text-gray-400 text-sm">$7.88</span>
+                                </div>
+                            </div>
+                            <div class="add-to-cart-wrapper bg-orange-100 rounded-full inline-block">
+                                <!-- Add to Cart Button -->
+                                <button class="add-to-cart-btn text-orange-500 text-sm font-medium w-full py-2 px-4">
+                                    Add to cart
+                                </button>
+                                <!-- Quantity Counter (initially hidden) -->
+                                <div
+                                    class="quantity-controls hidden items-center justify-center font-semibold py-1 px-4 grid-cols-3 gap-2">
+                                    <button class="decrease-btn text-xl">-</button>
+                                    <span class="quantity-value text-center border-x border-orange-400 px-2">1</span>
+                                    <button class="increase-btn text-xl">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- second -->
+                <div class="flex flex-col gap-4">
+                    <div class="relative">
+                        <img src="https://klbtheme.com/bumedi/wp-content/uploads/2025/03/banner-07.jpg" alt="Product"
+                            class="rounded-xl md:h-80 w-full object-cover">
+                        <div
+                            class="absolute left-0 top-0 max-w-96 rounded-xl p-6 flex flex-col items-start justify-center h-full gap-2">
+                            <h3 class="text-sm text-purple-800 font-semibold">Exclusive Discount</h3>
+                            <h2 class="sm:text-xl md:text-2xl font-bold text-purple-900 leading-tight mt-1">Fun Finds
+                                for
+                                Every Growing
+                                Mind
+                            </h2>
+                            <p class="text-sm text-purple-700 mt-2">Your Go-To Destination for Toys and Apparel That
+                                Inspire
+                                and
+                                Delight</p>
+                            <a href="#" class="mt-3 text-sm font-medium text-purple-800 underline">View More →</a>
+                        </div>
+                    </div>
+                    <!-- Offer Banner -->
+                    <div class="relative">
+                        <img src="https://klbtheme.com/bumedi/wp-content/uploads/2025/03/banner-07.jpg" alt="Product"
+                            class="rounded-xl md:h-80 w-full object-cover">
+                        <div
+                            class="absolute left-0 top-0 max-w-96 rounded-xl p-6 flex flex-col items-start justify-center h-full gap-2">
+                            <h3 class="text-sm text-purple-800 font-semibold">Exclusive Discount</h3>
+                            <h2 class="sm:text-xl md:text-2xl font-bold text-purple-900 leading-tight mt-1">Fun Finds
+                                for
+                                Every Growing
+                                Mind
+                            </h2>
+                            <p class="text-sm text-purple-700 mt-2">Your Go-To Destination for Toys and Apparel That
+                                Inspire
+                                and
+                                Delight</p>
+                            <a href="#" class="mt-3 text-sm font-medium text-purple-800 underline">View More →</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- third -->
+                <div class="flex flex-col gap-6">
+                    <!-- Product Card -->
+                    <div class="border rounded-xl gap-2 p-4 shadow-sm flex hover:border-orange-500">
+                        <a href="#">
+                            <img src="https://klbtheme.com/bumedi/wp-content/uploads/2024/09/1-78.jpg"
+                                alt="Product Image" class="mx-auto h-40 mb-2">
+                        </a>
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <div class="text-sm text-yellow-500">⭐⭐⭐⭐ 3.67</div>
+                                <a href="#">
+                                    <h2 class="text-sm font-semibold mt-2">The Ginger People Ginger Rescue Soft Lozenges
+                                    </h2>
+                                </a>
+                                <div class="text-green-600 text-lg font-bold">
+                                    <span>$6.88</span>
+                                    <span class="line-through text-gray-400 text-sm">$7.88</span>
+                                </div>
+                            </div>
+                            <div class="add-to-cart-wrapper bg-orange-100 rounded-full inline-block">
+                                <!-- Add to Cart Button -->
+                                <button
+                                    class="add-to-cart-btn hidden text-orange-500 text-sm font-medium w-full py-2 px-4">
+                                    Add to cart
+                                </button>
+                                <!-- Quantity Counter (initially hidden) -->
+                                <div
+                                    class="quantity-controls grid items-center justify-center font-semibold py-1 px-4 grid-cols-3 gap-2">
+                                    <button class="decrease-btn text-xl">-</button>
+                                    <span class="quantity-value text-center border-x border-orange-400 px-2">1</span>
+                                    <button class="increase-btn text-xl">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card -->
+                    <div class="border rounded-xl gap-2 p-4 shadow-sm flex hover:border-orange-500">
+                        <a href="#">
+                            <img src="https://klbtheme.com/bumedi/wp-content/uploads/2024/09/1-78.jpg"
+                                alt="Product Image" class="mx-auto h-40 mb-2">
+                        </a>
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <div class="text-sm text-yellow-500">⭐⭐⭐⭐ 3.67</div>
+                                <a href="#">
+                                    <h2 class="text-sm font-semibold mt-2">The Ginger People Ginger Rescue Soft Lozenges
+                                    </h2>
+                                </a>
+                                <div class="text-green-600 text-lg font-bold">
+                                    <span>$6.88</span>
+                                    <span class="line-through text-gray-400 text-sm">$7.88</span>
+                                </div>
+                            </div>
+                            <div class="add-to-cart-wrapper bg-orange-100 rounded-full inline-block">
+                                <!-- Add to Cart Button -->
+                                <button class="add-to-cart-btn text-orange-500 text-sm font-medium w-full py-2 px-4">
+                                    Add to cart
+                                </button>
+                                <!-- Quantity Counter (initially hidden) -->
+                                <div
+                                    class="quantity-controls hidden items-center justify-center font-semibold py-1 px-4 grid-cols-3 gap-2">
+                                    <button class="decrease-btn text-xl">-</button>
+                                    <span class="quantity-value text-center border-x border-orange-400 px-2">1</span>
+                                    <button class="increase-btn text-xl">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card -->
+                    <div class="border rounded-xl gap-2 p-4 shadow-sm flex hover:border-orange-500">
+                        <a href="#">
+                            <img src="https://klbtheme.com/bumedi/wp-content/uploads/2024/09/1-78.jpg"
+                                alt="Product Image" class="mx-auto h-40 mb-2">
+                        </a>
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <div class="text-sm text-yellow-500">⭐⭐⭐⭐ 3.67</div>
+                                <a href="#">
+                                    <h2 class="text-sm font-semibold mt-2">The Ginger People Ginger Rescue Soft Lozenges
+                                    </h2>
+                                </a>
+                                <div class="text-green-600 text-lg font-bold">
+                                    <span>$6.88</span>
+                                    <span class="line-through text-gray-400 text-sm">$7.88</span>
+                                </div>
+                            </div>
+                            <div class="add-to-cart-wrapper bg-orange-100 rounded-full inline-block">
+                                <!-- Add to Cart Button -->
+                                <button class="add-to-cart-btn text-orange-500 text-sm font-medium w-full py-2 px-4">
+                                    Add to cart
+                                </button>
+                                <!-- Quantity Counter (initially hidden) -->
+                                <div
+                                    class="quantity-controls hidden items-center justify-center font-semibold py-1 px-4 grid-cols-3 gap-2">
+                                    <button class="decrease-btn text-xl">-</button>
+                                    <span class="quantity-value text-center border-x border-orange-400 px-2">1</span>
+                                    <button class="increase-btn text-xl">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="py-6 bg-white">
+        <!-- Product Category Cards -->
+        <div class="container mx-auto px-4 pb-10 pt-3 border-b">
+            <div class="swiper categorySlider">
+                <div class="swiper-wrapper">
+                    <a href="#" class="swiper-slide">
+                        <div
+                            class="flex flex-col items-center gap-4 bg-gray-100 rounded-xl px-5 py-7 md:px-8 min-w-[120px]">
+                            <img src="https://klbtheme.com/bumedi/wp-content/uploads/2025/03/banner-09.png"
+                                alt="Baby Girl" class="object-contain rounded-full size-28" />
+                            <div class="flex flex-col gap-1 items-center">
+                                <p class="font-semibold md:text-lg text-sm">Baby Girl</p>
+                                <p class="text-xs text-gray-500">3.457 K Products</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide">
+                        <div
+                            class="flex flex-col items-center gap-4 bg-gray-100 rounded-xl px-5 py-7 md:px-8 min-w-[120px]">
+                            <img src="https://klbtheme.com/bumedi/wp-content/uploads/2025/03/banner-10.png"
+                                alt="Baby Girl" class="object-contain rounded-full size-28" />
+                            <div class="flex flex-col gap-1 items-center">
+                                <p class="font-semibold md:text-lg text-sm">Baby Girl</p>
+                                <p class="text-xs text-gray-500">3.457 K Products</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide">
+                        <div
+                            class="flex flex-col items-center gap-4 bg-gray-100 rounded-xl px-5 py-7 md:px-8 min-w-[120px]">
+                            <img src="https://klbtheme.com/bumedi/wp-content/uploads/2025/03/banner-10.png"
+                                alt="Baby Girl" class="object-contain rounded-full size-28" />
+                            <div class="flex flex-col gap-1 items-center">
+                                <p class="font-semibold md:text-lg text-sm">Baby Girl</p>
+                                <p class="text-xs text-gray-500">3.457 K Products</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide">
+                        <div
+                            class="flex flex-col items-center gap-4 bg-gray-100 rounded-xl px-5 py-7 md:px-8 min-w-[120px]">
+                            <img src="https://klbtheme.com/bumedi/wp-content/uploads/2025/03/banner-12.png"
+                                alt="Baby Girl" class="object-contain rounded-full size-28" />
+                            <div class="flex flex-col gap-1 items-center">
+                                <p class="font-semibold md:text-lg text-sm">Baby Girl</p>
+                                <p class="text-xs text-gray-500">3.457 K Products</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide">
+                        <div
+                            class="flex flex-col items-center gap-4 bg-gray-100 rounded-xl px-5 py-7 md:px-8 min-w-[120px]">
+                            <img src="https://klbtheme.com/bumedi/wp-content/uploads/2025/03/banner-11.png"
+                                alt="Baby Girl" class="object-contain rounded-full size-28" />
+                            <div class="flex flex-col gap-1 items-center">
+                                <p class="font-semibold md:text-lg text-sm">Baby Girl</p>
+                                <p class="text-xs text-gray-500">3.457 K Products</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide">
+                        <div
+                            class="flex flex-col items-center gap-4 bg-gray-100 rounded-xl px-5 py-7 md:px-8 min-w-[120px]">
+                            <img src="https://klbtheme.com/bumedi/wp-content/uploads/2025/03/banner-15.png"
+                                alt="Baby Girl" class="object-contain rounded-full size-28" />
+                            <div class="flex flex-col gap-1 items-center">
+                                <p class="font-semibold md:text-lg text-sm">Baby Girl</p>
+                                <p class="text-xs text-gray-500">3.457 K Products</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide">
+                        <div
+                            class="flex flex-col items-center gap-4 bg-gray-100 rounded-xl px-5 py-7 md:px-8 min-w-[120px]">
+                            <img src="https://klbtheme.com/bumedi/wp-content/uploads/2025/03/banner-14.png"
+                                alt="Baby Girl" class="object-contain rounded-full size-28" />
+                            <div class="flex flex-col gap-1 items-center">
+                                <p class="font-semibold md:text-lg text-sm">Baby Girl</p>
+                                <p class="text-xs text-gray-500">3.457 K Products</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide">
+                        <div
+                            class="flex flex-col items-center gap-4 bg-gray-100 rounded-xl px-5 py-7 md:px-8 min-w-[120px]">
+                            <img src="https://klbtheme.com/bumedi/wp-content/uploads/2025/03/banner-11.png"
+                                alt="Baby Girl" class="object-contain rounded-full size-28" />
+                            <div class="flex flex-col gap-1 items-center">
+                                <p class="font-semibold md:text-lg text-sm">Baby Girl</p>
+                                <p class="text-xs text-gray-500">3.457 K Products</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide">
+                        <div
+                            class="flex flex-col items-center gap-4 bg-gray-100 rounded-xl px-5 py-7 md:px-8 min-w-[120px]">
+                            <img src="https://klbtheme.com/bumedi/wp-content/uploads/2025/03/banner-13.png"
+                                alt="Baby Girl" class="object-contain rounded-full size-28" />
+                            <div class="flex flex-col gap-1 items-center">
+                                <p class="font-semibold md:text-lg text-sm">Baby Girl</p>
+                                <p class="text-xs text-gray-500">3.457 K Products</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Brand Logos -->
+        <div class="container mx-auto px-4 pb-6 pt-3">
+            <div class="swiper categorySlider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="https://klbtheme.com/bumedi/wp-content/uploads/2025/03/banner-02.jpg" alt="Bugaboo"
+                                class="p-2 grayscale max-h-[120px] w-auto" />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="https://klbtheme.com/bumedi/wp-content/uploads/2024/08/logo-02.png" alt="Bugaboo"
+                                class="p-2 grayscale max-h-[120px] w-auto" />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="https://klbtheme.com/bumedi/wp-content/uploads/2024/08/logo-04.png" alt="Bugaboo"
+                                class="p-2 grayscale max-h-[120px] w-auto" />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="https://klbtheme.com/bumedi/wp-content/uploads/2024/08/logo-05.png" alt="Bugaboo"
+                                class="p-2 grayscale max-h-[120px] w-auto" />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="https://klbtheme.com/bumedi/wp-content/uploads/2024/08/logo-06.png" alt="Bugaboo"
+                                class="p-2 grayscale max-h-[120px] w-auto" />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="https://klbtheme.com/bumedi/wp-content/uploads/2024/08/logo-08.png" alt="Bugaboo"
+                                class="p-2 grayscale max-h-[120px] w-auto" />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="https://klbtheme.com/bumedi/wp-content/uploads/2024/08/logo-02.png" alt="Bugaboo"
+                                class="p-2 grayscale max-h-[120px] w-auto" />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="https://klbtheme.com/bumedi/wp-content/uploads/2024/08/logo-04.png" alt="Bugaboo"
+                                class="p-2 grayscale max-h-[120px] w-auto" />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="https://klbtheme.com/bumedi/wp-content/uploads/2024/08/logo-06.png" alt="Bugaboo"
+                                class="p-2 grayscale max-h-[120px] w-auto" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20"></section>
 
 
 
 
 
 
-<!-- main custom js -->
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- main custom js -->
     <script src="./js/main.js"></script>
+
 </body>
 
 </html>
