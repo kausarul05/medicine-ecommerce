@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Page</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- tailwind css   -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom css  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="">
+
+    <div class="container mx-auto md:p-6 p-2" x-data="{ differentAddress: false }">
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Billing Details -->
+            <div class="md:col-span-2  md:p-6 p-2 rounded">
+                <!-- Progress Bar -->
+                <div class="mb-6">
+                    <div class="bg-red-50 border border-red-300  p-4 rounded">
+                        <div class="text-sm font-medium"><i class="fa-solid fa-cube"></i> Add <span
+                                class="font-bold text-red-700">$248.88</span> to cart
+                            and get free
+                            shipping!</div>
+                        <div class="mt-2 bg-gray-200 h-2 rounded overflow-hidden">
+                            <div class="bg-red-500 h-2 w-[20%]"></div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="text-xl font-semibold mb-4">Billing Details</h2>
+                <form class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <label for="name">
+                            <span class="text-sm">First name *</span>
+                            <input type="text" id="name" placeholder="First name *"
+                                class="border p-2 rounded w-full focus:outline-sky-400 shadow-sm" required />
+                        </label>
+                        <label for="last">
+                            <span class="text-sm">Last name *</span>
+                            <input id="last" type="text" placeholder="Last name *"
+                                class="border p-2 rounded w-full focus:outline-sky-400 shadow-sm" required />
+                        </label>
+                    </div>
+
+
+                    <label for="company" class="block">
+                        <span class="text-sm">Company name (optional)*</span>
+                        <input id="company" type="text" placeholder="Company name (optional)"
+                            class="border p-2 rounded w-full focus:outline-sky-400 shadow-sm" required />
+                    </label>
+
+                    <select class="border p-2 rounded w-full text-sm focus:outline-sky-400 active:outline-sky-400 shadow-sm">
+                        <option>Bangladesh</option>
+                    </select>
+
+
+                    <label for="street" class="block">
+                        <span class="text-sm">Street address *</span>
+                        <input id="street" type="text" placeholder="Street address *"
+                            class="border p-2 rounded w-full focus:outline-sky-400 shadow-sm" required />
+                    </label>
+
+
+                    <!-- <input type="text" placeholder="Apartment, suite, etc. (optional)"
+                        class="border p-2 rounded w-full" /> -->
+                    <label for="apartment" class="block">
+                        <span class="text-sm">Apartment, suite, etc. (optional)</span>
+                        <input id="apartment" type="text" placeholder="Apartment, suite, etc. (optional)"
+                            class="border p-2 rounded w-full focus:outline-sky-400 shadow-sm" />
+                    </label>
+
+
+                    <label for="city" class="block">
+                        <span class="text-sm">Town / City *</span>
+                        <input id="city" type="text" placeholder="Town / City *"
+                            class="border p-2 rounded w-full focus:outline-sky-400 shadow-sm" required />
+                    </label>
+
+                    <select class="border p-2 rounded w-full text-sm focus:outline-sky-400 active:border-sky-400 shadow-sm">
+                        <option>Select District</option>
+                        <option>Dhaka</option>
+                        <option>Chattogram</option>
+                    </select>
+
+                    <label for="postcode" class="block">
+                        <span class="text-sm">Postcode / ZIP (optional)</span>
+                        <input id="postcode" type="text" placeholder="Postcode / ZIP (optional)"
+                            class="border p-2 rounded w-full focus:outline-sky-400 shadow-sm" />
+                    </label>
+
+
+                    <label for="phone" class="block">
+                        <span class="text-sm">Phone *</span>
+                        <input id="phone" type="text" placeholder="Phone *"
+                            class="border p-2 rounded w-full focus:outline-sky-400 shadow-sm" required />
+                    </label>
+                    <label for="email" class="block">
+                        <span class="text-sm">Email address *</span>
+                        <input id="email" type="email" placeholder="Email address *"
+                            class="border p-2 rounded w-full focus:outline-sky-400 shadow-sm" required />
+                    </label>
+
+                    <!-- Account & Shipping Options -->
+                    <!-- <div class="flex items-center space-x-2">
+                        <input type="checkbox" id="create_account" class="w-4 h-4" />
+                        <label for="create_account" class="text-sm">Create an account?</label>
+                    </div> -->
+
+                    <div class="flex items-center space-x-2">
+                        <input type="checkbox" id="ship_different" class="w-4 h-4" x-model="differentAddress" />
+                        <label for="ship_different" class="text-sm cursor-pointer">Ship to a different
+                            address?</label>
+                    </div>
+
+                    <!-- Ship to different address form -->
+                    <div x-show="differentAddress" class="mt-4 space-y-4 border p-4 rounded bg-gray-50">
+                        <h3 class="font-semibold">Shipping Details</h3>
+                        <label for="" class="block">
+                            <span class="text-sm">First name *</span>
+                            <input type="text" placeholder="First name *"
+                                class="border p-2 rounded w-full focus:outline-sky-400" />
+                        </label>
+                        <label for="" class="block">
+                            <span class="text-sm">Last name *</span>
+                            <input type="text" placeholder="Last name *"
+                                class="border p-2 rounded w-full focus:outline-sky-400" />
+                        </label>
+                        <label for="" class="block">
+                            <span class="text-sm">Street address *</span>
+                            <input type="text" placeholder="Street address *"
+                                class="border p-2 rounded w-full focus:outline-sky-400" />  
+                        </label>
+                        <label for="" class="block">
+                            <span class="text-sm">Town / City *</span>
+                            <input type="text" placeholder=""
+                                class="border p-2 rounded w-full focus:outline-sky-400" />
+                        </label>
+
+                        <select class="border p-2 rounded w-full focus:outline-sky-400 active:border-sky-400">
+                            <option>Select District</option>
+                        </select>
+                    </div>
+
+                    <label for="" class="block">
+                        <span class="text-sm">Order notes (optional)</span>
+                        <textarea placeholder="Notes about your order, e.g. special notes for delivery."
+                            class="border p-2 rounded w-full focus:outline-sky-400 shadow-sm"></textarea>
+                    </label>
+                </form>
+
+            </div>
+
+            <!-- Order Summary -->
+            <div class="bg-white p-6 rounded shadow space-y-4 h-fit">
+                <h2 class="text-xl font-semibold mb-4">Your order</h2>
+
+                <div class="space-y-2 text-sm">
+                    <div class="flex justify-between border-b pb-2">
+                        <span>Equate No Drip Nasal Spray</span>
+                        <span>$11.80</span>
+                    </div>
+                    <div class="flex justify-between border-b pb-2">
+                        <span>Always Discreet Pads × 1</span>
+                        <span>$18.22</span>
+                    </div>
+                    <div class="flex justify-between border-b pb-2">
+                        <span>Equate Allergy Relief × 2</span>
+                        <span>$21.10</span>
+                    </div>
+                    <div class="flex justify-between border-t pt-2">
+                        <span>Subtotal</span>
+                        <span>$51.12</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>Shipping</span>
+                        <span>$15.00</span>
+                    </div>
+                    <div class="flex justify-between font-bold border-t pt-2">
+                        <span>Total</span>
+                        <span>$66.12</span>
+                    </div>
+                </div>
+
+                <!-- Payment Methods -->
+                <div class="space-y-2">
+                    <div class="flex items-center">
+                        <input type="radio" id="bank" name="payment" class="w-4 h-4" />
+                        <label for="bank" class="ml-2 text-sm cursor-pointer">Direct Bank Transfer</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="radio" id="check" name="payment" class="w-4 h-4" />
+                        <label for="check" class="ml-2 text-sm cursor-pointer">Check Payments</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="radio" id="cod" name="payment" class="w-4 h-4" />
+                        <label for="cod" class="ml-2 text-sm cursor-pointer">Cash On Delivery</label>
+                    </div>
+                </div>
+
+                <!-- Terms -->
+                <div class="flex items-center">
+                    <input type="checkbox" id="terms" class="w-4 h-4" />
+                    <label for="terms" class="ml-2 text-sm cursor-pointer">I agree to the terms & conditions</label>
+                </div>
+
+                <!-- Place Order -->
+                <button class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded text-sm">Place
+                    order</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
